@@ -7,4 +7,10 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
+    button: {
+        backgroundColor: "blue",
+        padding: 10,
+        borderRadius: 5,
+        
+    }
 });

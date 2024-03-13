@@ -5,11 +5,13 @@ import Profile from "../screens/Profile";
 
 const Tab = createBottomTabNavigator();
 
+import { user } from "../data/Profile";
+
 const TabRoutes = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Profile" component={Profile} initialParams={user} />
     </Tab.Navigator>
   );
 };

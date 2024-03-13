@@ -5,11 +5,13 @@ import Profile from "../screens/Profile";
 
 const Drawer = createDrawerNavigator();
 
+import { user } from "../data/Profile";
+
 const DrawerRoutes = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="Profile" component={Profile} />
+      <Drawer.Screen name="Profile" component={Profile} initialParams={user}/>
     </Drawer.Navigator>
   );
 };
